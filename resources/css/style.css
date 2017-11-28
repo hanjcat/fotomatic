@@ -75,12 +75,27 @@ header .icon {
   padding-left: .75rem;
 }
 
-header .mobile {
+header .mobile, header .tablet {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop, header .tablet {
     display: none;
   }
 
